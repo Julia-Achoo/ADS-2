@@ -45,7 +45,7 @@ double sinn(double x, uint16_t count) {
 double cosn(double x, uint16_t count) {
   double result = 1.0;
   for (uint16_t n = 1; n <= count; n++) {
-    double sign = (n % 2 == 0) ? -1.0 : 1.0;
+    double sign = (n % 2 == 0) ? 1.0 : -1.0;
     result += sign * calcItem(x, 2 * n);
   }
   return result;
